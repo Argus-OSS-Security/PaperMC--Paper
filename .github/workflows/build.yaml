@@ -6,17 +6,18 @@
 
 name: Build Paper
 
-on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - labeled
-  push:
-    branches-ignore:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     types:
+#       - opened
+#       - reopened
+#       - synchronize
+#       - labeled
+#   push:
+#     branches-ignore:
+#       - main
+# 
 jobs:
   build:
     env:

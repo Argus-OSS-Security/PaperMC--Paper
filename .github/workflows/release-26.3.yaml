@@ -1,11 +1,12 @@
 name: Release 26.3
 
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - main
+# 
 permissions:
   contents: read
 

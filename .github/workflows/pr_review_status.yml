@@ -1,16 +1,17 @@
 name: Update PR Project Status
 
-on:
-  workflow_run:
-    workflows:
-      - PR Review Signal
-    types:
-      - completed
-
-  schedule:
-    - cron: "07 6 * * *"
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_run:
+#     workflows:
+#       - PR Review Signal
+#     types:
+#       - completed
+# 
+#   schedule:
+#     - cron: "07 6 * * *"
+#   workflow_dispatch:
+# 
 jobs:
   review-submitted:
     if: >

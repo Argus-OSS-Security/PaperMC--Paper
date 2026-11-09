@@ -1,11 +1,12 @@
 name: Publish PR
 
-on:
-  workflow_run:
-    workflows: [ "Build Paper" ]
-    types:
-      - completed
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_run:
+#     workflows: [ "Build Paper" ]
+#     types:
+#       - completed
+# 
 permissions:
   packages: write # To upload the PR
   actions: write # To get information about the uploading workflow run and to delete the run artifacts

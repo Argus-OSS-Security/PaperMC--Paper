@@ -1,11 +1,12 @@
 name: Test Results
 
-on:
-  workflow_run:
-    workflows: [ "Build Paper" ]
-    types:
-      - completed
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_run:
+#     workflows: [ "Build Paper" ]
+#     types:
+#       - completed
+# 
 permissions:
   actions: read
   checks: write

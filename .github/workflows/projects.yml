@@ -1,13 +1,14 @@
 name: Update Projects
 
-on:
-  issues:
-    types:
-      - labeled
-      - unlabeled
-      - closed
-      - reopened
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issues:
+#     types:
+#       - labeled
+#       - unlabeled
+#       - closed
+#       - reopened
+# 
 jobs:
   bugs:
     if: "github.event_name == 'issues' && contains(github.event.*.labels.*.name, 'type: bug')"

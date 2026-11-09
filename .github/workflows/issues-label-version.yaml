@@ -1,8 +1,9 @@
-on:
-  issues:
-    types:
-      - opened
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issues:
+#     types:
+#       - opened
+# 
 jobs:
   detect-version:
     runs-on: namespace-profile-linux-small
